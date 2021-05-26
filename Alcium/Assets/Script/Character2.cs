@@ -53,7 +53,7 @@ public class Character2 : MonoBehaviour {
  
                 if (!isAttacking)
                 {
-                    //animations.Play("Unarmed-Strafe-Forward");
+                    //animations.Play("Walking");
                    
                 }
  
@@ -77,7 +77,7 @@ public class Character2 : MonoBehaviour {
  
                 if (!isAttacking)
                 {
-                    //animations.Play("Unarmed-Strafe-Backward");
+                    //animations.Play("Walking Backwards");
                 }
  
                 if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -103,7 +103,7 @@ public class Character2 : MonoBehaviour {
             {
                 if (!isAttacking)
                 {
-                    //animations.Play("Unarmed-Idle");
+                    //animations.Play("Idle");
                 }
  
                 if (Input.GetKeyDown(KeyCode.Mouse0))

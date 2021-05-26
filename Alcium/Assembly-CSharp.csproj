@@ -64,13 +64,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\AIEnemy.cs" />
     <Compile Include="Assets\Script\Character.cs" />
     <Compile Include="Assets\Script\Character2.cs" />
+    <Compile Include="Assets\Script\EnemyAI3.cs" />
     <Compile Include="Assets\Script\Menu.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\PickableObject.cs" />
-    <Compile Include="Assets\enemyAI.cs" />
-    <None Include="Assets\Kevin Iglesias\3DCharacterDummy\Readme.txt" />
+    <Compile Include="Assets\Script\enemyAI.cs" />
+    <None Include="Assets\Supercyan Free Forest Sample\Shaders\Legacy\CelShader.shader" />
+    <None Include="Assets\Supercyan Free Forest Sample\Shaders\SupercyanShaderLighting.cginc" />
+    <None Include="Assets\Supercyan Free Forest Sample\Shaders\SupercyanShader.shader" />
     <Reference Include="UnityEngine">
       <HintPath>/Volumes/TOSHIBA EXT/Unity/2019.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -636,7 +640,16 @@
       <HintPath>/Users/Elouan/U'Project/Alcium/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{823ECD57-905B-4813-3D4A-3253C287D37C}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{08621087-4E31-2422-696A-5A458B968540}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
